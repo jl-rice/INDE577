@@ -12,6 +12,7 @@ We can call a logstic regression an extreme case of linear regression, but there
 ![](https://latex.codecogs.com/svg.latex?Preactivation%3A%20z%20%3D%20%5Csum%20w_j%20x_j%20&plus;%20bias)
 
 Below is a graph of the sigmoid function:
+
 <img src="https://miro.medium.com/max/1280/1*OUOB_YF41M-O4GgZH_F2rw.png" width="500"/>
 
 #### There are some general assumptions of the logistic regression:
