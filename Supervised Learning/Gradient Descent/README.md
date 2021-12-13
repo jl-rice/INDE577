@@ -4,12 +4,12 @@ Gradient descent is a first-order iterative optimization machine learning algori
 
 <img src="http://rasbt.github.io/mlxtend/user_guide/general_concepts/gradient-optimization_files/ball.png" width="500"/>
 
-#### Basic concepts of neural networks:
+### Basic concepts of neural networks:
 1. Weights and bias.
 2. Activation function.
 3. Loss function.
 
-#### Steps to implement gradient descent in linear models:
+### Steps to implement gradient descent in linear models:
 1. We start with a linear model ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D%20%3D%20%5Chat%7Bw_i%7DX%20&plus;%20b). Our goal is to find the optimal linear function approximating the data. Here, ![](https://latex.codecogs.com/svg.latex?w) and ![](https://latex.codecogs.com/svg.latex?b) are weight and bias respectively.
 2. Define a loss function. A loss function tells us “how good” our model is at making predictions for a given set of parameters. The cost function has its own curve and its own gradients. The slope of this curve tells us how to update our parameters to make the model more accurate. The loss function is shown below, and M refers to the number of data points.
 
