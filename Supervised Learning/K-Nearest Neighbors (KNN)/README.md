@@ -23,7 +23,7 @@ In machine learning, the k-nearest neighbors (KNN) algorithm is a supervised and
 - Choice of ![](https://latex.codecogs.com/svg.latex?k): for classificaiton, ![](https://latex.codecogs.com/svg.latex?k) should be odd.
 - Measure of performance: use error.
 
-![](https://latex.codecogs.com/svg.latex?E%20%3D%20%5Cfrac%7B1%7D%7BM%7D%5Csum_%7Bi%20%3D%201%7D%5E%7BM%7D%20%28y_i%20%5Cneq%20%5Ctilde%7By_i%7D%29).
+![](https://latex.codecogs.com/svg.latex?E%20%3D%20%5Cfrac%7B1%7D%7BM%7D%5Csum_%7Bi%20%3D%201%7D%5E%7BM%7D%20%28y_i%20%5Cneq%20%5Ctilde%7By_i%7D%29)
 
 # References
 
