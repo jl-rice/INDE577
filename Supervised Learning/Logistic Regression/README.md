@@ -28,7 +28,7 @@ We assume a bernoulli distribution for ![](https://latex.codecogs.com/svg.latex?
 
 Then through partial derivatives, we finally obtain:
 
-![](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20w_j%7D%20%3D%20%5B%5Csigma%28w_j%20x_j%20&plus;%20bias%29%20%u2212%20y%5Dx_j%20%3D%20%5B%5Chat%7By%7D%20-%20y%5Dx_j)
+![](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20w_j%7D%20%3D%20%5B%5Csigma%28w_j%20x_j%20&plus;%20bias%29-y%5Dx_j%20%3D%20%5B%5Chat%7By%7D%20-%20y%5Dx_j)
 
 ![](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20b%7D%20%3D%20%5Csigma%28w_j%20x_j%20&plus;%20bias%29%20-%20y%20%3D%20%5Chat%7By%7D%20-%20y)
 
