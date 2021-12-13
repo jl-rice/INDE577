@@ -11,9 +11,7 @@ In machine learning, the k-nearest neighbors (KNN) algorithm is a supervised and
    - KNN classification: the intuition is that data with similar features should be close in splace. Thus, KNN classification involves classifying an unobserved new data point by a plurality vote of its ![](https://latex.codecogs.com/svg.latex?k) nearest annotated data points. Then, the new data point will be assigned to the class most common among its ![](https://latex.codecogs.com/svg.latex?k) nearest neighbors.
    - KNN regression: the output is the property value for the object. This value is the average of the values of ![](https://latex.codecogs.com/svg.latex?k) nearest neighbors. The formula is shown below:
 
-$$
-d(p, q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2}
-$$
+![](https://latex.codecogs.com/svg.latex?d%28p%2C%20q%29%20%3D%20%5Csqrt%7B%28p_1%20-%20q_1%29%5E2%20&plus;%20%28p_2%20-%20q_2%29%5E2%7D)
 
 
 ### Drawbacks of KNN algorithm:
@@ -23,7 +21,7 @@ $$
 
 ### Things we need to pay special attention to:
 - Choice of ![](https://latex.codecogs.com/svg.latex?k): for classificaiton, ![](https://latex.codecogs.com/svg.latex?k) should be odd.
-- Measure of performance: use error $E = \frac{1}{M}\sum_{i = 1}^{M} (y_i \neq \tilde{y_i})$.
+- Measure of performance: use error ![](https://latex.codecogs.com/svg.latex?E%20%3D%20%5Cfrac%7B1%7D%7BM%7D%5Csum_%7Bi%20%3D%201%7D%5E%7BM%7D%20%28y_i%20%5Cneq%20%5Ctilde%7By_i%7D%29).
 
 # References
 
