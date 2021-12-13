@@ -18,7 +18,7 @@ Below is a graph of the sigmoid function:
 1. Each example ![](https://latex.codecogs.com/svg.latex?%28x%2C%20y%29) belongs to one of two complementary classes.
 2. Each example is independent of each other.
 3. We assume all examples are generated under the same distribution.
-4. The probability of "given ![](https://latex.codecogs.com/svg.latex?x) and predict the correct ![](https://latex.codecogs.com/svg.latex?y)" ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) is ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D) if ![](https://latex.codecogs.com/svg.latex?y%20%3D%201), and $p(y|x)$ is ![](https://latex.codecogs.com/svg.latex?1%20-%20%5Chat%7By%7D) if ![](https://latex.codecogs.com/svg.latex?y%20%3D%200). We want to maximize ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D) when ![](https://latex.codecogs.com/svg.latex?y%20%3D%201) and maximize ![](https://latex.codecogs.com/svg.latex?1%20-%20%5Chat%7By%7D) when ![](https://latex.codecogs.com/svg.latex?y%20%3D%200).
+4. The probability of "given ![](https://latex.codecogs.com/svg.latex?x) and predict the correct ![](https://latex.codecogs.com/svg.latex?y)", ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29), is ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D) if ![](https://latex.codecogs.com/svg.latex?y%20%3D%201), and ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) is ![](https://latex.codecogs.com/svg.latex?1%20-%20%5Chat%7By%7D) if ![](https://latex.codecogs.com/svg.latex?y%20%3D%200). We want to maximize ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D) when ![](https://latex.codecogs.com/svg.latex?y%20%3D%201) and maximize ![](https://latex.codecogs.com/svg.latex?1%20-%20%5Chat%7By%7D) when ![](https://latex.codecogs.com/svg.latex?y%20%3D%200).
 
 #### Derivations and outcomes:
 We assume a bernoulli distribution for ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29). Then, ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29%20%3D%20%5Chat%7By%7D%5Ey%281%20-%20%5Chat%7By%7D%29%5E%7B1-y%7D). We want to maximize ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) by maximizing ![](https://latex.codecogs.com/svg.latex?log%28p%28y%7Cx%29%29), which is equivalent to minimizing ![](https://latex.codecogs.com/svg.latex?-log%28p%28y%7Cx%29%29), also known as the cross entropy loss (CEL). The loss function is important to implement the algorithm.
@@ -26,6 +26,7 @@ We assume a bernoulli distribution for ![](https://latex.codecogs.com/svg.latex?
 ![](https://latex.codecogs.com/svg.latex?CEL%20%3D%20L%28w%2C%20b%3B%20y%29%20%3D%20-log%28p%28y%7Cx%29%29%20%3D%20-ylog%5Chat%7By%7D%20-%20%281-y%29log%281-%5Chat%7By%7D%29)
 
 Then through partial derivatives, we finally obtain:
+
 ![](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20w_j%7D%20%3D%20%5B%5Csigma%28w_j%20x_j%20&plus;%20bias%29%20%u2212%20y%5Dx_j%20%3D%20%5B%5Chat%7By%7D%20-%20y%5Dx_j)
 
 ![](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20b%7D%20%3D%20%5Csigma%28w_j%20x_j%20&plus;%20bias%29%20-y%20%3D%20%5Chat%7By%7D%20-%20y)
