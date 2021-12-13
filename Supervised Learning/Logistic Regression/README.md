@@ -41,3 +41,9 @@ Then through partial derivatives, we finally obtain:
    - ...
    - ![](https://latex.codecogs.com/svg.latex?b%20%3D%20b%20-%20%5Calpha%28%5Chat%7By%7D%20-%20y%29)
 4. Repeat step 1 to step 3 until desired loss in-sample is reached, or the maximum number of steps is reached.
+
+# References
+
+Logistic regression. Wikipedia. https://en.wikipedia.org/wiki/Logistic_regression
+
+Pant, Ayush. Introduction to logistic regression. Jan 2019. https://towardsdatascience.com/
