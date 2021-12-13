@@ -6,10 +6,10 @@ In machine learning, the k-nearest neighbors (KNN) algorithm is a supervised and
 
 
 ### The KNN algorithm:
-1. In both cases, the input consists of the k closest training examples in a data set. Choose $k \in Z^{+}$
+1. In both cases, the input consists of the ![](https://latex.codecogs.com/svg.latex?k) closest training examples in a data set. Choose ![](https://latex.codecogs.com/svg.latex?k%20%5Cin%20Z%5E%7B&plus;%7D).
 2. The output depends on whether KNN is used for classification or regression:
-   - KNN classification: the intuition is that data with similar features should be close in splace. Thus, KNN classification involves classifying an unobserved new data point by a plurality vote of its k nearest annotated data points. Then, the new data point will be assigned to the class most common among its k nearest neighbors.
-   - KNN regression: the output is the property value for the object. This value is the average of the values of k nearest neighbors. The formula is shown below:
+   - KNN classification: the intuition is that data with similar features should be close in splace. Thus, KNN classification involves classifying an unobserved new data point by a plurality vote of its ![](https://latex.codecogs.com/svg.latex?k) nearest annotated data points. Then, the new data point will be assigned to the class most common among its ![](https://latex.codecogs.com/svg.latex?k) nearest neighbors.
+   - KNN regression: the output is the property value for the object. This value is the average of the values of ![](https://latex.codecogs.com/svg.latex?k) nearest neighbors. The formula is shown below:
 
 $$
 d(p, q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2}
@@ -22,7 +22,7 @@ $$
 
 
 ### Things we need to pay special attention to:
-- Choice of k: for classificaiton, k should be odd.
+- Choice of ![](https://latex.codecogs.com/svg.latex?k): for classificaiton, ![](https://latex.codecogs.com/svg.latex?k) should be odd.
 - Measure of performance: use error $E = \frac{1}{M}\sum_{i = 1}^{M} (y_i \neq \tilde{y_i})$.
 
 # References
