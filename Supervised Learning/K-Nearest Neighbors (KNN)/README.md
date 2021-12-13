@@ -1,4 +1,4 @@
-# K-Nearest Neighbors (KNN) Algorithm
+# K-Nearest Neighbors (KNN)
 
 In machine learning, the k-nearest neighbors (KNN) algorithm is a supervised and non-parametric classification method used for both classificationa and regression, but it is more widely used for classification. It is considered a non-parametric method because it does not make any assumptions about the underlying data distribution.
 
