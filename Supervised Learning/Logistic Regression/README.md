@@ -12,16 +12,16 @@ We can call a logstic regression an extreme case of linear regression, but there
 ![](https://latex.codecogs.com/svg.latex?Preactivation%3A%20z%20%3D%20%5Csum%20w_j%20x_j%20&plus;%20bias)
 
 Below is a graph of the sigmoid function:
-<img src="https://miro.medium.com/max/1280/1*OUOB_YF41M-O4GgZH_F2rw.png" width="500" height="500"/>
+<img src="https://miro.medium.com/max/1280/1*OUOB_YF41M-O4GgZH_F2rw.png" width="500"/>
 
 #### There are some general assumptions of the logistic regression:
 1. Each example ![](https://latex.codecogs.com/svg.latex?%28x%2C%20y%29) belongs to one of two complementary classes.
 2. Each example is independent of each other.
 3. We assume all examples are generated under the same distribution.
-4. The probability of "given $x$ and predict the correct ![](https://latex.codecogs.com/svg.latex?y)" ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) is $\hat{y}$ if $y = 1$, and $p(y|x)$ is $1 - \hat{y}$ if $y = 0$. We want to maximize $\hat{y}$ when $y = 1$ and maximize $1 - \hat{y}$ when $y = 0$.
+4. The probability of "given ![](https://latex.codecogs.com/svg.latex?x) and predict the correct ![](https://latex.codecogs.com/svg.latex?y)" ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) is ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D) if ![](https://latex.codecogs.com/svg.latex?y%20%3D%201), and $p(y|x)$ is ![](https://latex.codecogs.com/svg.latex?1%20-%20%5Chat%7By%7D) if ![](https://latex.codecogs.com/svg.latex?y%20%3D%200). We want to maximize ![](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D) when ![](https://latex.codecogs.com/svg.latex?y%20%3D%201) and maximize ![](https://latex.codecogs.com/svg.latex?1%20-%20%5Chat%7By%7D) when ![](https://latex.codecogs.com/svg.latex?y%20%3D%200).
 
 #### Derivations and outcomes:
-We assume a bernoulli distribution for ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29). Then, ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29%20%3D%20%5Chat%7By%7D%5Ey%281%20-%20%5Chat%7By%7D%29%5E%7B1-y%7D). We want to maximize ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) by maximizing $log(p(y|x))$, which is equivalent to minimizing $-log(p(y|x))$, also known as the cross entropy loss $(CEL)$. The loss function is important to implement the algorithm.
+We assume a bernoulli distribution for ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29). Then, ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29%20%3D%20%5Chat%7By%7D%5Ey%281%20-%20%5Chat%7By%7D%29%5E%7B1-y%7D). We want to maximize ![](https://latex.codecogs.com/svg.latex?p%28y%7Cx%29) by maximizing ![](https://latex.codecogs.com/svg.latex?log%28p%28y%7Cx%29%29), which is equivalent to minimizing ![](https://latex.codecogs.com/svg.latex?-log%28p%28y%7Cx%29%29), also known as the cross entropy loss (CEL). The loss function is important to implement the algorithm.
 
 ![](https://latex.codecogs.com/svg.latex?CEL%20%3D%20L%28w%2C%20b%3B%20y%29%20%3D%20-log%28p%28y%7Cx%29%29%20%3D%20-ylog%5Chat%7By%7D%20-%20%281-y%29log%281-%5Chat%7By%7D%29)
 
@@ -33,7 +33,7 @@ Then through partial derivatives, we finally obtain:
 #### Steps to train our neural network:
 1. Randomly select ![](https://latex.codecogs.com/svg.latex?%28x%2C%20y%29) from the training set.
 2. Feed forward into the neural network.
-3. Use gradient descent to update weights and bias (choose the learning rate $\alpha$):
+3. Use gradient descent to update weights and bias (choose the learning rate ![](https://latex.codecogs.com/svg.latex?%5Calpha)):
    - ![](https://latex.codecogs.com/svg.latex?w_1%20%3D%20w_1%20-%20%5Calpha%28%5Chat%7By%7D%20-%20y%29x_1)
    - ![](https://latex.codecogs.com/svg.latex?w_2%20%3D%20w_2%20-%20%5Calpha%28%5Chat%7By%7D%20-%20y%29x_2)
    - ...
