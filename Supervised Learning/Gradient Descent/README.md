@@ -2,7 +2,7 @@
 
 Gradient descent is a first-order iterative optimization machine learning algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. We use gradient descent to update the parameters of our model. Since gradient descent is commonly used to train machine learning models and neural networks, the parameters refer to coefficients in linear regression and weights in neural networks. 
 
-<img src="http://rasbt.github.io/mlxtend/user_guide/general_concepts/gradient-optimization_files/ball.png" width="500" height="500"/>
+</td><img src="http://rasbt.github.io/mlxtend/user_guide/general_concepts/gradient-optimization_files/ball.png" width="500" height="500"/></td>
 
 #### Basic concepts of neural networks:
 1. Weights and bias.
