@@ -13,9 +13,11 @@ Gradient descent is a first-order iterative optimization machine learning algori
 1. We start with a linear model $\hat{y} = \hat{w_i}X + b$. Our goal is to find the optimal linear function approximating the data. Here, w and b are weight and bias respectively.
 2. Define a loss function. A loss function tells us “how good” our model is at making predictions for a given set of parameters. The cost function has its own curve and its own gradients. The slope of this curve tells us how to update our parameters to make the model more accurate. The loss function is shown below, and M refers to the number of data points.
 
-
+$$
 L = \frac{1}{2M}\sum_{i = 1}^{M}(\hat{w_i}x_i + b - y_i)^2
+$$
 
+![First equation](https://latex.codecogs.com/png.image?\dpi{110}%20L%20=%20\frac{1}{2M}\sum_{i%20=%201}^{M}(\hat{w_i}x_i%20+%20b%20-%20y_i)^2)
 
 3. Use gradient descent to calculate the gradient of the loss function.
 $$
