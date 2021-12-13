@@ -23,3 +23,9 @@ Another esemble learning method is bagging. Bagging is based on a bootstrapping 
 
 ### Difference between random forest and bagging
 The key difference between bagging and random forest is that in Random forests, only a subset of features are selected at random out of the total and the best split feature from the subset is used to split each node in a tree, unlike in bagging where all features are considered for splitting a node.
+
+# References
+
+Ensemble Models. Toward Data Science. https://towardsdatascience.com/ensemble-models-5a62d4f4cb0c
+
+Random forest. Wikipedia. https://en.wikipedia.org/wiki/Random_forest
