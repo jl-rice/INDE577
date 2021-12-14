@@ -8,7 +8,7 @@ Unsupervised learning uses machine learning algorithms to analyze and cluster un
 
 * Dimensionality reduction is a learning technique used when the number of features  (or dimensions) in a given dataset is too high. It reduces the number of data inputs to a manageable size while also preserving the data integrity. Often, this technique is used in the preprocessing data stage, such as when autoencoders remove noise from visual data to improve picture quality.
 
-In class, we covered only one unsupervised machine learning algorithm: PCA and K-Means Clustering.
+In class, we covered only one unsupervised machine learning algorithm: K-Means Clustering.
 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Unsupervised-Learning-in-ML-1.jpg" width="650"/>
 
